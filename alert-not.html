@@ -10,7 +10,7 @@
 function checkDismissedNotice() {
   const dismissedNoticeTimestamp = localStorage.getItem('dismissedNoticeTimestamp');
   if (dismissedNoticeTimestamp) {
-    const threeDaysAgo = Date.now() - (3 * 24 * 60 * 60 * 1000); // 3 days in milliseconds
+    const threeDaysAgo = Date.now() - (60 * 60 * 1000); // 3 days in milliseconds
     if (dismissedNoticeTimestamp > threeDaysAgo) {
       // Notice dismissed within the last 3 days, hide the notice
       document.getElementById('notice').style.display = 'none';

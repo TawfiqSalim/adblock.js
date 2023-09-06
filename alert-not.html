@@ -1,10 +1,10 @@
-<div id="notice" class="notice notice-success is-dismissible"> 
+<div id="alertMessage"><div id="notice" class="notice notice-success is-dismissible"> 
   <p>Thanks for using our WordPress plugin.</p>
   <button id="dismissButton" type="button" class="notice-dismiss">
     <span class="screen-reader-text">Dismiss this notice.</span>
   </button>
 </div>
-
+</div>
 <script>
 // Check if the notice has been dismissed in the last 3 days
 function checkDismissedNotice() {
@@ -13,7 +13,7 @@ function checkDismissedNotice() {
     const threeDaysAgo = Date.now() - (60 * 60 * 1000); // 3 days in milliseconds
     if (dismissedNoticeTimestamp > threeDaysAgo) {
       // Notice dismissed within the last 3 days, hide the notice
-      document.getElementById('notice').style.display = 'none';
+      document.getElementById('alertMessage').style.display = 'none';
     }
   }
 }

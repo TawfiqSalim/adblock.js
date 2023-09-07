@@ -1,7 +1,8 @@
-<div id="notice" class="notice notice-info is-dismissible" style="border-radius:0 !important"> 
-  <p>Thanks for using our WordPress plugin.</p>
-  <button id="dismissButton" type="button" class="notice-dismiss">
-    <span class="screen-reader-text">Dismiss this notice.</span>
-  </button>
-</div>
+<div class="notice notice-info is-dismissible" id="my-plugin-review-notice">
+        <p><?php _e('Enjoying My Plugin? Please take a moment to leave a review!', 'wprw'); ?></p>
+        <p>
+            <a class="button button-primary" href="https://example.com/review-page"><?php _e('Leave a Review', 'my-plugin-textdomain'); ?></a>
+            <button class="button" id="my-plugin-review-dismiss"><?php _e('I already made a review', 'wprw'); ?></button>
+        </p>
+    </div>
 

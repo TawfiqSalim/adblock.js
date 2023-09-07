@@ -1,2 +1,110 @@
- <p style="font-size:15px;font-weight:600;font-family:var(--wprw-font);">Enjoying My Plugin? Please take a moment to leave a review!</p>
-<a class="button button-primary" href="https://wprw.pro/review">Leave a Review</a> 
+<div class='alert alert__primary spacer' role='alert'>
+    <i class="fa fa-exclamation-circle alert__icon"></i>
+    <p class='alert__text'>This is a primary alertThis is a primary alertThis is a primary alert</p>
+    <button type="button" class="alert__close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true"><i class="fas fa-times-circle alert__close"></i></span>
+    </button>
+  </div>
+  <style>
+   /* $alertPrimary: #ccf2ff;
+$alertSecondary: #E2E3E3;
+$alertWarning: #ffff99;
+$alertError: #ffb3b3;
+$alertSuccess: #d6f5d6; */
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.page__title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.alert__container {
+  background-color: rgba(255,255,255, 0.75);
+  margin: 0 auto;
+  width: 50%;
+  padding: 1rem;
+  border-radius: .25rem;
+  border: .125rem solid black;
+}
+ .alert__container .spacer {
+    margin-bottom: 1rem;
+  }
+  
+  .alert {
+    border-radius: .125rem;
+    border: 1px solid black;
+    padding: .5rem;
+    color: black;
+}
+.alert__icon{
+      margin: 0 1rem;
+    }
+    
+.alert__text {
+      display: inline-block;
+      font-size: 1.125rem;
+    }
+    
+.alert__close {
+      float: right;
+      padding: .75rem .75rem;
+      color: black;
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+}
+.alert span {
+        font-size: 1rem;
+      }
+    
+.alert__primary {
+      background-color: #ccf2ff;
+    }
+    
+.alert__secondary {
+      background-color: #E2E3E3;
+    }
+    
+.alert__warning {
+      background-color: #ffff99;
+    }
+    
+.alert__error {
+      background-color: #ffb3b3;
+    }
+    
+.alert__success {
+      background-color: #d6f5d6;
+    }
+
+.closed {
+  display: none;
+}
+  </style>

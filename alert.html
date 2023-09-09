@@ -18,20 +18,6 @@ $('.js-messageClose').on('click', function(e) {
   closeMessage($(this).closest('.Message'));
 });
 
-$('#js-helpMe').on('click', function(e) {
-  alert('Help you we will, young padawan');
-  closeMessage($(this).closest('.Message'));
-});
-
-$('#js-authMe').on('click', function(e) {
-  alert('Okelidokeli, requesting data transfer.');
-  closeMessage($(this).closest('.Message'));
-});
-
-$('#js-showMe').on('click', function(e) {
-  alert("You're off to our help section. See you later!");
-  closeMessage($(this).closest('.Message'));
-});
 
 $(document).ready(function() {
   setTimeout(function() {
@@ -40,8 +26,6 @@ $(document).ready(function() {
 });
 </script>
 <style>
-@import url(https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
 
 .Message {
   display: table;
